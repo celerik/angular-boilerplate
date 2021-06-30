@@ -2,7 +2,7 @@
 
 
 
-# Angular 11 + Eslint + Prettier + Husky
+# Angular 12 + Eslint + Prettier + Husky
 <br>
 
 <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png" alt="Angular" width="400">
@@ -14,9 +14,11 @@
 *@celerik/angular-boilerplate* nos entrega una base de código basada en los estándares del grupo RSI.
 ## Lo que  está incluido
 - Soporte Sass y Scss
+- Soporte Tailwindcss
 - Soporte TypeScript 
-- WebStorm/PhpStorm support
+- Soporte WebStorm/PhpStorm
 - Eslint + Prettier Rules
+- Soporte Angular Material y Ng Zorro
 
 ## Requerimiento
 - NodeJs >= 14.x
@@ -25,10 +27,12 @@
 ## Quick start
 - Descargar esta plantilla
 - Descomprimir la carpeta
+- Opcionalmente puede seleccionar la rama que tiene alguna de la ui de su preferencia: Angular Material O Ng Zorro
 - modificar package.json con el nombre de tu aplicación
 
 ```
 cd "folder name"
+git checkout angular_material o git checkout ng_zorro (Opcional) 
 yarn install 
 ng serve 
 ```

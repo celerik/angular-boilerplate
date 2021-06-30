@@ -2,7 +2,7 @@
 
 
 
-# Angular 11 + Eslint + Prettier + Husky
+# Angular 12 + Eslint + Prettier + Husky
 <br>
 
 <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png" alt="Angular" width="400">
@@ -14,9 +14,11 @@
 *@celerik/angular-boilerplate* provides a code baseline for creating angular projects based on rsi standards.
 ## What is included
 - Sass and Scss support
+- Tailwindcss Support
 - TypeScript support
 - WebStorm/PhpStorm support
 - Eslint + Prettier Rules
+- Angular Material And Ng Zorro Support
 
 ## Requirements
 - NodeJs >= 14.x
@@ -24,10 +26,12 @@
 
 ## Quick start
 - Download this template
-- Extract it and rename the folder with your project's name
-- Modify package.json to match your app name
+- Unzip the folder
+- Optionally you can select the branch that has any of the ui of your preference: Angular Material O Ng Zorro
+- modify package.json with the name of your application
 ```
 cd "folder name"
+git checkout angular_material or git checkout ng_zorro (Optional)
 yarn install 
 ng serve 
 ```
