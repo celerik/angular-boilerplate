@@ -2,7 +2,7 @@
 
 
 
-# Angular 12 + Eslint + Prettier + Husky
+# Angular 13 + Eslint + Prettier + Husky
 <br>
 
 <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png" alt="Angular" width="400">
