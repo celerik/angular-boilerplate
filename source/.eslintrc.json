@@ -5,51 +5,34 @@
   ],
   "overrides": [
     {
-      "plugins": [
-        "unused-imports"
-      ],
       "files": [
         "*.ts"
       ],
       "parserOptions": {
         "project": [
-          "tsconfig.json",
-          "e2e/tsconfig.json"
+          "tsconfig.json"
         ],
         "createDefaultProgram": true
       },
       "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "no-unused-vars": "off",
-        "no-underscore-dangle": "off",
-        "unused-imports/no-unused-imports-ts": "error",
-        "unused-imports/no-unused-vars": [
+        "@angular-eslint/directive-selector": [
           "error",
           {
-            "vars": "all",
-            "varsIgnorePattern": "^_",
-            "args": "after-used",
-            "argsIgnorePattern": "^_"
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
           }
         ],
         "@angular-eslint/component-selector": [
           "error",
           {
+            "type": "element",
             "prefix": "app",
-            "style": "kebab-case",
-            "type": "element"
-          }
-        ],
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "prefix": "",
-            "style": "camelCase",
-            "type": "attribute"
+            "style": "kebab-case"
           }
         ]
       }
@@ -62,25 +45,6 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {}
-    },
-    {
-      "files": [
-        "*.html"
-      ],
-      "excludedFiles": [
-        "*inline-template-*.component.html"
-      ],
-      "extends": [
-        "plugin:prettier/recommended"
-      ],
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "parser": "angular"
-          }
-        ]
-      }
     }
   ]
 }
